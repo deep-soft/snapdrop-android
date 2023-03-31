@@ -184,8 +184,9 @@ try {
 }
 try {
     // pairdrop.net
-    document.querySelector('#theme-wrapper').style.display = "none";
-    //document.querySelector('#theme-auto').click(); TODO: we need a solution to switch back to 'auto'
+    //document.querySelector('#theme-wrapper').style.display = "none";
+    localStorage.removeItem('theme');
+    //TODO: we need a solution to switch back to 'auto'
 } catch (e) {
     console.error(e);
 }
